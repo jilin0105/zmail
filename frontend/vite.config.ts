@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://api.mail.mdzz.uk',
+        target: 'https://zz.xiaopozhan.dpdns.org/',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path,
