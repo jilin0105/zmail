@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -31,10 +31,8 @@ const Header: React.FC<HeaderProps> = ({
         setDefaultDomain(defaultDom);
       } catch (error) {
         console.error('加载邮箱域名配置失败:', error);
-        // 保持使用默认值
       }
     };
-    
     loadConfig();
   }, []);
   
@@ -55,18 +53,9 @@ const Header: React.FC<HeaderProps> = ({
                 domains={emailDomains}
                 isLoading={isLoading}
               />
-              <div className="ml-3 pl-3 border-l border-muted-foreground/20 flex items-center">
+              {/* 仅修改 */}
+              <div className="ml-3 pl-3 border-l border-muted-foreground/20">
                 <LanguageSwitcher />
-                <a
-                  href="https://github.com/zaunist/zmail"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 flex items-center justify-center rounded-md transition-all duration-200 hover:bg-primary/20 hover:text-primary hover:scale-110 ml-1"
-                  aria-label="GitHub"
-                  title="GitHub"
-                >
-                  <i className="fab fa-github text-base"></i>
-                </a>
               </div>
             </div>
           )}
