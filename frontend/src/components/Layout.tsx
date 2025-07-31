@@ -17,7 +17,7 @@ const Layout: React.FC = () => {
     
     // 默认SEO属性
     const defaultProps = {
-      title: 'ZMAIL-24小时匿名邮箱',
+      title: '24小时保镖',
       description: '创建临时邮箱地址，接收邮件，无需注册，保护您的隐私安全',
       keywords: '临时邮箱,匿名邮箱,一次性邮箱,隐私保护,电子邮件,ZMAIL',
     };
@@ -26,7 +26,7 @@ const Layout: React.FC = () => {
     if (mailbox) {
       return {
         ...defaultProps,
-        title: `ZMAIL-24小时匿名邮箱`,
+        title: `24小时保镖`,
         description: `查看 ${mailbox} 的临时邮箱收件箱，接收邮件，无需注册，保护您的隐私安全`,
       };
     }
