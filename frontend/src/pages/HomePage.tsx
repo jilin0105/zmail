@@ -10,7 +10,7 @@ const StructuredData: React.FC = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "ZMAIL-24小时匿名邮箱",
+    "name": "24小时保镖之家",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "All",
     "offers": {
