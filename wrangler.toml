@@ -8,7 +8,7 @@ compatibility_date = "2025-03-01"
 
 # 设置自定义域名
 routes = [
-  { pattern = "zz.xiaopozhan.dpdns.org.", custom_domain = true }
+  { pattern = "zz.xiaopozhan.dpdns.org", custom_domain = true }
 ]
 
 # 启用 D1 数据库
